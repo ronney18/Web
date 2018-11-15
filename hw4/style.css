@@ -1,0 +1,146 @@
+/*
+	File:http://weblab.cs.uml.edu/~rsanchez/hw4/style.css
+	COMP4610 Assignment 4: Styling Your First Web Page
+	Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+	Copyright (c) 2018 by Ronney Sanchez.
+	updated by Ronney Sanchez on October 5, 2018 at 10:30 PM
+
+	Sources: https://www.sitepoint.com/a-minimal-html-document-html5-edition/
+	https://www.w3schools.com/css/css_border.asp
+
+	Description: This web page uses the mechanics of HTML such as the title,
+	header of the page, paragraphs, and sub-headers. This web page also uses CSS
+	to style my html page with color, borders, images, and graphics. To test
+	these features, I talked about my experience at UMass Lowell, which school
+	I transferred from, and how happy I was able to get into this class. I talked
+	a little of myself. I also included a selfie for a description of myself.
+
+	Validation: I used the Markup Validation Service (https://validator.w3.org/)
+	and the CSS Validation Service http://jigsaw.w3.org/css-validator/.
+*/
+
+/*
+	Displaying a block for each header and footer
+*/
+header, footer{
+	display: block;
+}
+
+/*
+	A medium sea green color will be used for the html background color
+*/
+html{
+	background-color: MediumSeaGreen;
+}
+
+body{
+	/*Using the solarsystem image as the body background*/
+	background-image: url(solarsystem.png);
+	/*No margin on the body page*/
+	margin: 10px;
+	/*Aligning all the text to the center of the body page*/
+  text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	/*Pad the body to 20 pixels*/
+	padding: 20px;
+}
+
+/*Changing link color to yellow*/
+a{
+	color: yellow;
+}
+
+a:hover{
+	color: violet;
+}
+/*Changing link color to white when visited*/
+a:visited {
+	color: white;
+}
+
+.anc:hover {
+	color: white;
+}
+img{
+	/*Pad all the images to 20 pixels*/
+  padding: 20px;
+}
+
+#content{
+	/*Using a dashed line border style to the content of the page*/
+  border-style: dashed;
+	/*Use a red color border style*/
+  border-color: red;
+	/*Padding the border using 20 pixels*/
+  padding: 20px;
+  margin: 10px;
+}
+
+/*Align the last paragraph to the left of the body page*/
+#content p:nth-last-child(n){
+  text-align: left;
+}
+
+p{
+	/*Using a dotted border style to the top and bottom of each paragraph*/
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+	/*Change the color of the border to light green*/
+  border-color: lightgreen;
+	/*Padding the border using 20 pixels*/
+  padding: 20px;
+
+}
+
+#content ul{
+	/*Using an image bullet for the list in the content page*/
+	list-style-image: url(marker.gif);
+	/*Position the bullets to the inside of the content page*/
+	list-style-position: inside;
+}
+
+#wrapper {
+	/*Extend the wrapper to 80% of the html page*/
+	width: 80%;
+	/*The minimum width will be down to 800 pixels*/
+	min-width: 800px;
+	background: #00569f;
+	/*Moving the left margin to 150 pixels from the left side of the html page*/
+	margin-left: 150px;
+	/*Using the font color of white*/
+  color: white;
+	/*Padding the wrapper to 30 pixels*/
+  padding: 30px;
+}
+
+div header{
+			/*Using an image as the backgroung header*/
+			background-image: url(header.JPG);
+			/*There will be no repeats to the backgroung image*/
+			background-repeat: no-repeat;
+			/*Position the backgroung image to the right of the header*/
+			background-position: right;
+			/*Using dark green as the color of the backgroung header*/
+      			background-color: darkgreen;
+			/*Padding the header using 20 pixels*/
+			padding: 10px;
+	}
+
+h1{
+	/*Using an orange color for the font of the header title*/
+  color: orange;
+}
+
+/*Aligning the bullet list to the left of the page*/
+div ul{
+  text-align: left;
+}
+
+footer{
+	/*Aligning the footer to the center of the page*/
+  text-align: center;
+	/*Styling the font of the footer in italic*/
+  font-style: italic;
+	/*Use a 0.8 font size footer*/
+  font-size: 0.8em;
+}
