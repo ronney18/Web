@@ -1,0 +1,104 @@
+<!--
+	File: http://ronney18.github.io/Javascript-2/MultiplicationTable.html
+	COMP4610 Assignment 6: Creating a Multiplication Table
+	Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+	Copyright (c) 2018 by Ronney Sanchez.
+	updated by Ronney Sanchez on November 14, 2018 at 9:30 PM
+
+	Sources: https://www.w3schools.com/js/default.asp
+						Albara Mehene (class mate)
+
+	Description: This web page prompts the user for a specific number of rows and
+	columns and displays a multiplication table starting at the specified row
+	and column number and ending at a certain row and column number.
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+      <!-- CSS Link -->
+    	<link href="css/MultiplicationTable.css" rel="stylesheet">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--page title-->
+	<title>
+		Ronney's Multiplication Table
+	</title>
+</head>
+
+<body>
+	<!-- Page Wrapper -->
+	<div id="wrapper">
+		<!--page header-->
+		<header>
+			<h1>
+				Multiplication Table Display
+			</h1>
+		</header>
+		<!-- page content -->
+		<div id="content">
+			<p>
+					This page will prompt the user for a starting and ending row and column
+          for a table generation. This is going to be a multiplication table
+          where it is going to multiply the number in the row by the nunber in
+          table the column. For example, it you type 6 for the starting row,
+          18 for the ending row, 3 for the starting column, and 10 for the ending
+          column, it is going to generate a multiplication table from 6 to 18
+          for the rows and 3 to 10 for the columns and each slot is going to multiply
+          the number in the row by the number in the column.
+			</p>
+			<p>
+					ORDER OF ROWS OR COLUMNS DOESN'T MATTER
+			</p>
+			<!--page form -->
+      <form id="input">
+				<!--column divider-->
+        <div class="start-column">
+          <label for="beginColumn">
+						Enter a number for the starting column:<br>
+          <input type="text" class="form-control" id="beginColumn" placeholder="Starting Row">
+					<p id="message1"></p>
+					<br>
+				</label>
+        </div>
+        <div class="end-column">
+          <label for="endColumn">
+						Enter a number for the ending column:<br>
+          <input type="text" class="form-control" id="endColumn" placeholder="Ending Row">
+					<p id="message2"></p>
+					<br>
+					</label>
+        </div>
+				<!--row divider-->
+        <div class="start-row">
+          <label for="beginRow">
+						Enter a number for the starting row:<br>
+          <input type="text" class="form-control" id="beginRow" placeholder="Starting Column">
+					<p id="message3"></p>
+					<br>
+					</label>
+        </div>
+        <div class="end-row">
+          <label for="endRow">
+						Enter a number for the ending row:<br>
+          <input type="text" class="form-control" id="endRow" placeholder="Ending Column">
+					<p id="message4"></p>
+					<br>
+					</label>
+        </div>
+				<label>
+						<!-- button input-->
+						<input type="submit" id="button" value="submit" onclick="printTable()">
+				</label>
+        </form>
+		</div>
+		<div id="tbl"></div>
+		<script src="js/MultiplicationTable.js"></script>
+
+		<!-- Page Footer -->
+	<footer>
+			Copyright &copy; Ronney Sanchez
+			<br>
+			<a href="mailto:sanchezronney@gmail.com">Email: sanchezronney@gmail.com</a>
+	</footer>
+</div>
+  	</body>
