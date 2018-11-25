@@ -43,7 +43,7 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(startRow == ""){
-        validation = "This entry is empty!";
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
         document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -74,7 +74,7 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(endRow == ""){
-        validation = "This entry is empty!";
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
         document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -105,7 +105,7 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(startColumn == ""){
-        validation = "This entry is empty!";
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
         document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -136,7 +136,7 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(endColumn == ""){
-        validation = "This entry is empty!";
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
         document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
