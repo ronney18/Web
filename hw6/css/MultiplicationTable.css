@@ -1,5 +1,5 @@
 /*
-File: http://ronney18.github.io/Javascript-2/MultiplicationTable.html
+File: http://ronney18.github.io/Web/hw6/MultiplicationTable.html
 COMP4610 Assignment 6: Creating a Multiplication Table
 Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
 Copyright (c) 2018 by Ronney Sanchez.

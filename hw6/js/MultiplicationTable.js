@@ -1,5 +1,5 @@
 /*
-File: http://ronney18.github.io/Javascript-2/MultiplicationTable.html
+File: http://ronney18.github.io/Web/hw6/MultiplicationTable.html
 COMP4610 Assignment 6: Creating a Multiplication Table
 Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
 Copyright (c) 2018 by Ronney Sanchez.
@@ -41,6 +41,14 @@ function printTable(){
         error = 1;
     }
 
+    //Display an error if the input is empty
+    else if(startRow == ""){
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
+        document.getElementById("message3").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
     else{
       //Assign a blank string to the validator
       validation = "";
@@ -59,6 +67,14 @@ function printTable(){
     //Display an error message if the input for the end of the row is not a number
     if(isNaN(endRow)){
         validation = "This entry is invalid! Numbers only!";
+        document.getElementById("message4").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
+    //Display an error if the input is empty
+    else if(endRow == ""){
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
         document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -87,6 +103,14 @@ function printTable(){
         error = 1;
     }
 
+    //Display an error if the input is empty
+    else if(startColumn == ""){
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
+        document.getElementById("message1").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
     else{
       //Assign a blank string to the validator
       validation = "";
@@ -105,6 +129,14 @@ function printTable(){
     //Display an error message if the input for the end of the column is not a number
     if(isNaN(endColumn)){
         validation = "This entry is invalid! Numbers only!";
+        document.getElementById("message2").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
+    //Display an error if the input is empty
+    else if(endColumn == ""){
+        validation = "This entry is empty or it's a zero! Non-zero entry only!";
         document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
