@@ -47,7 +47,16 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(startRow == ""){
-        validation = "This entry is empty or it's a zero! Non-zero entry only!";
+        validation = "This entry is empty! Non-zero entry only!";
+        document.getElementById("message3").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
+    //Display an error message if the input for the start of the row is out of bounds
+    else if(startRow < 1 || startRow > 350)
+    {
+        validation = "The limit is from 1 to 350!";
         document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -57,15 +66,6 @@ function printTable(){
       //Assign a blank string to the validator
       validation = "";
       document.getElementById("message3").innerHTML = validation;
-    }
-
-    //Display an error message if the input for the start of the row is out of bounds
-    if(startRow < -150 || startRow > 150)
-    {
-        validation = "The limit is from -150 to 150!";
-        document.getElementById("message3").innerHTML = validation;
-        //Assign the error checker to 1 (true)
-        error = 1;
     }
 
     //Display an error message if the input for the end of the row is not a number
@@ -78,7 +78,16 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(endRow == ""){
-        validation = "This entry is empty or it's a zero! Non-zero entry only!";
+        validation = "This entry is empty! Non-zero entry only!";
+        document.getElementById("message4").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
+    //Display an error message if the input for the end of the row is out of bounds
+    else if(endRow < 1 || endRow > 350)
+    {
+        validation = "The limit is from 1 to 350!";
         document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -88,15 +97,6 @@ function printTable(){
       //Assign a blank string to the validator
       validation = "";
       document.getElementById("message4").innerHTML = validation;
-    }
-
-    //Display an error message if the input for the end of the row is out of bounds
-    if(endRow < -150 || endRow > 150)
-    {
-        validation = "The limit is from -150 to 150!";
-        document.getElementById("message4").innerHTML = validation;
-        //Assign the error checker to 1 (true)
-        error = 1;
     }
 
     //Display an error message if the input for the start of the column is not a number
@@ -109,7 +109,16 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(startColumn == ""){
-        validation = "This entry is empty or it's a zero! Non-zero entry only!";
+        validation = "This entry is empty! Non-zero entry only!";
+        document.getElementById("message1").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
+    //Display an error message if the input for the start of the column is out of bounds
+    else if(startColumn < 1 || startColumn > 350)
+    {
+        validation = "The limit is from 1 to 350!";
         document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -119,15 +128,6 @@ function printTable(){
       //Assign a blank string to the validator
       validation = "";
       document.getElementById("message1").innerHTML = validation;
-    }
-
-    //Display an error message if the input for the start of the column is out of bounds
-    if(startColumn < -150 || startColumn > 150)
-    {
-        validation = "The limit is from -150 to 150!";
-        document.getElementById("message1").innerHTML = validation;
-        //Assign the error checker to 1 (true)
-        error = 1;
     }
 
     //Display an error message if the input for the end of the column is not a number
@@ -140,7 +140,16 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(endColumn == ""){
-        validation = "This entry is empty or it's a zero! Non-zero entry only!";
+        validation = "This entry is empty! Non-zero entry only!";
+        document.getElementById("message2").innerHTML = validation;
+        //Assign the error checker to 1 (true)
+        error = 1;
+    }
+
+    //Display an error message if the input for the end of the column is out of bounds
+    else if(endColumn < 1 || endColumn > 350)
+    {
+        validation = "The limit is from 1 to 350!";
         document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
@@ -150,15 +159,6 @@ function printTable(){
       //Assign a blank string to the validator
       validation = "";
       document.getElementById("message2").innerHTML = validation;
-    }
-
-    //Display an error message if the input for the end of the column is out of bounds
-    if(endColumn < -150 || endColumn > 150)
-    {
-        validation = "The limit is from -150 to 150!";
-        document.getElementById("message2").innerHTML = validation;
-        //Assign the error checker to 1 (true)
-        error = 1;
     }
 
     //End the program if the error checker is true
