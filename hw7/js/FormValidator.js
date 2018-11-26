@@ -1,20 +1,21 @@
 /*
 File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
-COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
-Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
-Copyright (c) 2018 by Ronney Sanchez.
-updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+	COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
+	Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+	Copyright (c) 2018 by Ronney Sanchez.
+	updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
 
-Sources: https://www.w3schools.com/js/default.asp
-          Albara Mehene (class mate)
-          Maritta Keu (class mate)
+	Sources: https://www.w3schools.com/js/default.asp
+		 https://jqueryvalidation.org/
+						Albara Mehene (class mate)
+						Marittya Keu (class mate)
 
-Description: This web page prompts the user for a specific number of rows and
-columns and displays a multiplication table starting at the specified row
-and column number and ending at a certain row and column number. This web
-also validates for user inputs as soon as the user enters an input. If the input
-is invalid, the user will automatically get notified by the JQuery validation
-plugin.
+	Description: This web page prompts the user for a specific number of rows and
+	columns and displays a multiplication table starting at the specified row
+	and column number and ending at a certain row and column number. This web
+	also validates for user inputs as soon as the user enters an input. If the input
+	is invalid, the user will automatically get notified by the JQuery validation
+	plugin.
 */
 //Validating the form from the html page
 $(document).ready(function(){
