@@ -48,22 +48,22 @@ $(document).ready(function(){
             //Displaying an error message for the start of the column with requirements and digit validation
             beginColumn:{
               required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive digits are allowed!"
+              digits: "Only non-zero positive numbers are allowed!"
             },
             //Displaying an error message for the end of the column with requirements and digit validation
             endColumn:{
               required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive digits are allowed!"
+              digits: "Only non-zero positive numbers are allowed!"
             },
             //Displaying an error message for the start of the row with requirements and digit validation
             beginRow:{
               required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive digits are allowed!"
+              digits: "Only non-zero positive numbers are allowed!"
             },
             //Displaying an error message for the end of the row with requirements and digit validation
             endRow:{
               required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive digits are allowed!"
+              digits: "Only non-zero positive numbers are allowed!"
             }
         }
     });
