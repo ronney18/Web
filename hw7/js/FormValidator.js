@@ -8,7 +8,7 @@ updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
 Sources: https://www.w3schools.com/js/default.asp
          https://jqueryvalidation.org/
           Albara Mehene (class mate)
-          Maritta Keu (class mate)
+          Marittya Keu (class mate)
 
 Description: This web page prompts the user for a specific number of rows and
 columns and displays a multiplication table starting at the specified row
