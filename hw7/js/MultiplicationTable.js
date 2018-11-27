@@ -40,16 +40,12 @@ function printTable(){
 
     //Display an error message if the input for the start of the row is not a number
     if(isNaN(startRow)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(startRow == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -71,16 +67,12 @@ function printTable(){
 
     //Display an error message if the input for the end of the row is not a number
     if(isNaN(endRow)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(endRow == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -102,8 +94,6 @@ function printTable(){
 
     //Display an error message if the input for the start of the column is not a number
     if(isNaN(startColumn)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -119,8 +109,6 @@ function printTable(){
     //Display an error message if the input for the start of the column is out of bounds
     else if(startColumn < 1 || startColumn > 350)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -133,16 +121,12 @@ function printTable(){
 
     //Display an error message if the input for the end of the column is not a number
     if(isNaN(endColumn)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(endColumn == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
