@@ -100,8 +100,6 @@ function printTable(){
 
     //Display an error if the input is empty
     else if(startColumn == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -109,6 +107,8 @@ function printTable(){
     //Display an error message if the input for the start of the column is out of bounds
     else if(startColumn < 1 || startColumn > 350)
     {
+	validation = "The limit is from 1 to 350!";
+        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
