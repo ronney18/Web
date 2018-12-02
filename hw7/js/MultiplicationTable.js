@@ -53,8 +53,6 @@ function printTable(){
     //Display an error message if the input for the start of the row is out of bounds
     else if(startRow < 1 || startRow > 350)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -80,8 +78,6 @@ function printTable(){
     //Display an error message if the input for the end of the row is out of bounds
     else if(endRow < 1 || endRow > 350)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -107,8 +103,6 @@ function printTable(){
     //Display an error message if the input for the start of the column is out of bounds
     else if(startColumn < 1 || startColumn > 350)
     {
-	validation = "The limit is from 1 to 350!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -134,8 +128,6 @@ function printTable(){
     //Display an error message if the input for the end of the column is out of bounds
     else if(endColumn < 1 || endColumn > 350)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
