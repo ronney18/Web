@@ -51,7 +51,7 @@ function printTable(){
     }
 
     //Display an error message if the input for the start of the row is out of bounds
-    else if(startRow < 1 || startRow > 350)
+    else if(startRow < -150 || startRow > 150)
     {
         //Assign the error checker to 1 (true)
         error = 1;
@@ -76,7 +76,7 @@ function printTable(){
     }
 
     //Display an error message if the input for the end of the row is out of bounds
-    else if(endRow < 1 || endRow > 350)
+    else if(endRow < -150 || endRow > 150)
     {
         //Assign the error checker to 1 (true)
         error = 1;
@@ -101,7 +101,7 @@ function printTable(){
     }
 
     //Display an error message if the input for the start of the column is out of bounds
-    else if(startColumn < 1 || startColumn > 350)
+    else if(startColumn < -150 || startColumn > 150)
     {
         //Assign the error checker to 1 (true)
         error = 1;
@@ -126,7 +126,7 @@ function printTable(){
     }
 
     //Display an error message if the input for the end of the column is out of bounds
-    else if(endColumn < 1 || endColumn > 350)
+    else if(endColumn < -150 || endColumn > 150)
     {
         //Assign the error checker to 1 (true)
         error = 1;
