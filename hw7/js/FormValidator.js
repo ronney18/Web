@@ -25,45 +25,61 @@ $(document).ready(function(){
           //An input for the start of the column is required only using digits and no characters
             beginColumn:{
               required: true,
-              digits: true
+              number: true,
+              min: -150,
+              max: 150
             },
             //An input for the end of the column is required only using digits and no characters
             endColumn:{
               required: true,
-              digits: true
+              number: true,
+              min: -150,
+              max: 150
             },
             //An input for the start of the row is required only using digits and no characters
             beginRow:{
               required: true,
-              digits: true
+              number: true,
+              min: -150,
+              max: 150
             },
             //An input for the end of the row is required only using digits and no characters
             endRow:{
               required: true,
-              digits: true
+              number: true,
+              min: -150,
+              max: 150
             }
         },
         //Display an error message before submitting if the user attempts to insert an ivalid input
         messages:{
             //Displaying an error message for the start of the column with requirements and digit validation
             beginColumn:{
-              required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive numbers are allowed!"
+              required: "Please enter a number from -150 to 150 except 0",
+              number: "Only numbers are allowed!",
+              min: "The minimum is -150!",
+              max: "The maximum is 150!"
             },
             //Displaying an error message for the end of the column with requirements and digit validation
             endColumn:{
-              required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive numbers are allowed!"
+              required: "Please enter a number from -150 to 150 except 0",
+              number: "Only numbers are allowed!",
+              min: "The minimum is -150!",
+              max: "The maximum is 150!"
             },
             //Displaying an error message for the start of the row with requirements and digit validation
             beginRow:{
-              required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive numbers are allowed!"
+              required: "Please enter a number from -150 to 150 except 0",
+              number: "Only numbers are allowed!",
+              min: "The minimum is -150!",
+              max: "The maximum is 150!"
             },
             //Displaying an error message for the end of the row with requirements and digit validation
             endRow:{
-              required: "Please enter a number from 1 to 350",
-              digits: "Only non-zero positive numbers are allowed!"
+              required: "Please enter a number from -150 to 150 except 0",
+              number: "Only numbers are allowed!",
+              min: "The minimum is -150!",
+              max: "The maximum is 150!"
             }
         }
     });
