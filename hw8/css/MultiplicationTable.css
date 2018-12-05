@@ -1,0 +1,207 @@
+/*
+File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
+COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
+Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+Copyright (c) 2018 by Ronney Sanchez.
+updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+
+Sources: https://www.w3schools.com/js/default.asp
+				https://jqueryvalidation.org/
+				Albara Mehene (class mate)
+				Marittya Keu (class mate)
+
+Description: This web page prompts the user for a specific number of rows and
+columns and displays a multiplication table starting at the specified row
+and column number and ending at a certain row and column number. This web
+also validates for user inputs as soon as the user enters an input. If the input
+is invalid, the user will automatically get notified by the JQuery validation
+plugin.
+*/
+header, footer{
+	/*Displaying blocks for the footer and header*/
+	display: block;
+}
+
+html{
+	/*Having the backgroung color to be tan*/
+	background-color: Tan;
+}
+
+body{
+	/*Using the solarsystem image as the body background*/
+	background-image: url(mathematics.png);
+	/*No margin on the body page*/
+	margin: 10px;
+	/*Aligning all the text to the center of the body page*/
+  text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	/*Pad the body to 20 pixels*/
+	padding: 20px;
+}
+
+#wrapper {
+	/*The minimum width will be down to 800 pixels*/
+	min-width: 700px;
+	background: #ff3300;
+	/*Moving the left margin to 150 pixels from the left side of the html page*/
+	margin: 30px;
+	/*Using the font color of white*/
+  color: lightgreen;
+	/*Padding the wrapper to 30 pixels*/
+  padding: 30px;
+}
+
+#content{
+	/*Using a dashed line border style to the content of the page*/
+  border-style: dotted;
+	/*Use a red color border style*/
+  border-color: blue;
+	/*Padding the border using 20 pixels*/
+  padding: 20px;
+	margin: 10px;
+}
+
+div header{
+			/*Using an image as the backgroung header*/
+			background-image: url(MultiplicationWiz.jpg);
+			/*There will be no repeats to the backgroung image*/
+			background-repeat: no-repeat;
+			/*Position the backgroung image to the right of the header*/
+			background-position: right;
+			/*Using dark green as the color of the backgroung header*/
+      background-color: purple;
+			/*Padding the header using 20 pixels*/
+			padding: 20px;
+	}
+
+	/*Styling each sliders in the html page*/
+	.slider{
+	    -webkit-appearance: none;
+			/*Using 50% of the form's width*/
+	    width: 50%;
+	    height: 15px;
+	    border-radius: 5px;
+	    background: #d3d3d3;
+	    outline: none;
+	    opacity: 0.7;
+	    -webkit-transition: .2s;
+	    transition: opacity .2s;
+		}
+/*Setting the opacity to 1 when slider is hovered*/
+		.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+	h1{
+		/*Changing the font color of the header title to red*/
+		color: red;
+	}
+
+  p{
+		/*Aligning the text of each paragraph to be justified*/
+      text-align: justify;
+  }
+
+	/*Having all the error messages to be bolded with a blue font color*/
+	#message1{
+		font-weight: bold;
+		color: blue;
+	}
+
+	/*Having all the error messages to be bolded with a blue font color*/
+	#message2{
+		font-weight: bold;
+		color: blue;
+	}
+
+	/*Having all the error messages to be bolded with a blue font color*/
+	#message3{
+		font-weight: bold;
+		color: blue;
+	}
+
+	/*Having all the error messages to be bolded with a blue font color*/
+	#message4{
+		font-weight: bold;
+		color: blue;
+	}
+
+	/*The input boxes of the form will be light blue with a width of 50% and 10px margin*/
+  .form-control
+  {
+      background-color: lightblue;
+      width: 50%;
+      margin: 10px;
+			/*Using 5 pixeled padding*/
+			padding: 5px;
+  }
+
+  form{
+		/*Aligning the text of the form to be justified*/
+    text-align: justify;
+  }
+
+	/*Positioning the table to be centered in the page with darkgreen-dashed border*/
+	table{
+		background-position: center;
+		border-style: dashed;
+		border-color: darkgreen;
+		margin: 10px;
+		padding: 10px;
+
+	}
+
+	/*The table cells will be blue with 10 pixels width and height*/
+	td {
+    background-color: blue;
+    border:1px solid black;
+    width:10px;
+    height:10px;
+    padding:5px
+}
+/*Table rows will have a 10 pixel width and height and 5 pixels of padding */
+tr {
+    border:1px solid black;
+    width:10px;
+    height:10px;
+    padding: 5px;
+}
+
+/*Changing the backgroun-color of the table header to purple with 10 pixels width and height*/
+th {
+    background-color: purple;
+    border:5px double black;
+    width:10px;
+    height:10px;
+    padding: 5px;
+}
+
+/*Changing link color to yellow*/
+a{
+	color: yellow;
+}
+
+/*Changing link color to violet when hovered over*/
+a:hover{
+  color: violet;
+}
+/*Changing link color to white when visited*/
+a:visited {
+	color: darkgreen;
+}
