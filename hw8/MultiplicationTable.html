@@ -1,0 +1,141 @@
+<!--
+	File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
+	COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
+	Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+	Copyright (c) 2018 by Ronney Sanchez.
+	updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+
+	Sources: https://www.w3schools.com/js/default.asp
+					 https://jqueryvalidation.org/
+						Albara Mehene (class mate)
+						Marittya Keu (class mate)
+
+	Description: This web page prompts the user for a specific number of rows and
+	columns and displays a multiplication table starting at the specified row
+	and column number and ending at a certain row and column number. This web
+	also validates for user inputs as soon as the user enters an input. If the input
+	is invalid, the user will automatically get notified by the JQuery validation
+	plugin.
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+      <!-- CSS Link -->
+    	<link href="css/MultiplicationTable.css" rel="stylesheet">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--page title-->
+	<title>
+		Ronney's Multiplication Table
+	</title>
+</head>
+
+<body>
+	<!-- Page Wrapper -->
+	<div id="wrapper">
+		<!--page header-->
+		<header>
+			<h1>
+				Multiplication Table Display
+			</h1>
+		</header>
+		<!-- page content -->
+		<div id="content">
+			<p>
+					This page will prompt the user for a starting and ending row and column
+          for a table generation. This is going to be a multiplication table
+          where it is going to multiply the number in the row by the nunber in
+          table the column. For example, it you type 6 for the starting row,
+          18 for the ending row, 3 for the starting column, and 10 for the ending
+          column, it is going to generate a multiplication table from 6 to 18
+          for the rows and 3 to 10 for the columns and each slot is going to multiply
+          the number in the row by the number in the column.
+			</p>
+			<p>
+					ORDER OF ROWS OR COLUMNS DOESN'T MATTER
+			</p>
+			<!--page form -->
+      <form name="myForm" id="myForm">
+				<!--column divider-->
+        <div class="start-column">
+          <label for="beginColumn">
+						Enter a number for the starting column:<br>
+					<div>
+          	<input type="number" class="form-control" name="beginColumn" id="beginColumn" placeholder="Starting Row">
+					</div>
+					<div class="slider" id="slider_startColumn">
+					</div>
+					<p id="message1"></p>
+					<br>
+				</label>
+        </div>
+        <div class="end-column">
+          <label for="endColumn">
+						Enter a number for the ending column:<br>
+					<div>
+          	<input type="number" class="form-control" name="endColumn" id="endColumn" placeholder="Ending Row">
+					</div>
+					<div class="slider" id="slider_endColumn">
+					</div>
+					<p id="message2"></p>
+					<br>
+					</label>
+        </div>
+				<!--row divider-->
+        <div class="start-row">
+          <label for="beginRow">
+						Enter a number for the starting row:<br>
+					<div>
+          	<input type="number" class="form-control" name="beginRow" id="beginRow" placeholder="Starting Column">
+					</div>
+					<div class="slider" id="slider_startRow">
+					</div>
+					<p id="message3"></p>
+					<br>
+					</label>
+        </div>
+        <div class="end-row">
+          <label for="endRow">
+						Enter a number for the ending row:<br>
+					<div>
+          	<input type="number" class="form-control" name="endRow" id="endRow" placeholder="Ending Column">
+					</div>
+					<div class="slider" id="slider_endRow">
+					</div>
+					<p id="message4"></p>
+					<br>
+					</label>
+        </div>
+				<label>
+						<!-- button input-->
+						<input type="submit" id="button" value="Submit" onclick="tabs()">
+				</label>
+        </form>
+		</div>
+		<p>
+				YOU COULD SAVE UP TO A TOTAL OF 10 TABLES!
+		</p>
+		<div id="div1">
+		</div>
+        <br><br>
+        <div id="tabs">
+          <ul>
+          </ul>
+        </div>
+		<!-- Page Footer -->
+	<footer>
+			Copyright &copy; Ronney Sanchez
+			<br>
+			<a href="mailto:sanchezronney@gmail.com">Email: sanchezronney@gmail.com</a>
+	</footer>
+	</div>
+	<!--J Query Validation Plugin Source code javascript-->
+	<!--<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="js/TableValidator.js"></script>
+  </body>
+	</html>
