@@ -6,8 +6,9 @@
 	updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
 
 	Sources: https://www.w3schools.com/js/default.asp
+		 https://jqueryvalidation.org/
 						Albara Mehene (class mate)
-						Maritta Keu (class mate)
+						Marittya Keu (class mate)
 
 	Description: This web page prompts the user for a specific number of rows and
 	columns and displays a multiplication table starting at the specified row
@@ -58,12 +59,12 @@
 					ORDER OF ROWS OR COLUMNS DOESN'T MATTER
 			</p>
 			<!--page form -->
-      <form action="" name="myForm" id="myForm">
+      <form name="myForm" id="myForm">
 				<!--column divider-->
         <div class="start-column">
           <label for="beginColumn">
 						Enter a number for the starting column:<br>
-          <input type="text" class="form-control" name="beginColumn" id="beginColumn" placeholder="Starting Row">
+          <input type="number" class="form-control" name="beginColumn" id="beginColumn" placeholder="Starting Row">
 					<p id="message1"></p>
 					<br>
 				</label>
@@ -71,7 +72,7 @@
         <div class="end-column">
           <label for="endColumn">
 						Enter a number for the ending column:<br>
-          <input type="text" class="form-control" name="endColumn" id="endColumn" placeholder="Ending Row">
+          <input type="number" class="form-control" name="endColumn" id="endColumn" placeholder="Ending Row">
 					<p id="message2"></p>
 					<br>
 					</label>
@@ -80,7 +81,7 @@
         <div class="start-row">
           <label for="beginRow">
 						Enter a number for the starting row:<br>
-          <input type="text" class="form-control" name="beginRow" id="beginRow" placeholder="Starting Column">
+          <input type="number" class="form-control" name="beginRow" id="beginRow" placeholder="Starting Column">
 					<p id="message3"></p>
 					<br>
 					</label>
@@ -88,7 +89,7 @@
         <div class="end-row">
           <label for="endRow">
 						Enter a number for the ending row:<br>
-          <input type="text" class="form-control" name="endRow" id="endRow" placeholder="Ending Column">
+          <input type="number" class="form-control" name="endRow" id="endRow" placeholder="Ending Column">
 					<p id="message4"></p>
 					<br>
 					</label>

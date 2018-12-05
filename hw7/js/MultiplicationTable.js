@@ -1,20 +1,21 @@
 /*
   File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
-  COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
-  Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
-  Copyright (c) 2018 by Ronney Sanchez.
-  updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+	COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
+	Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+	Copyright (c) 2018 by Ronney Sanchez.
+	updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
 
-  Sources: https://www.w3schools.com/js/default.asp
-          Albara Mehene (class mate)
-          Maritta Keu (class mate)
+	Sources: https://www.w3schools.com/js/default.asp
+		 https://jqueryvalidation.org/
+						Albara Mehene (class mate)
+						Marittya Keu (class mate)
 
-Description: This web page prompts the user for a specific number of rows and
-columns and displays a multiplication table starting at the specified row
-and column number and ending at a certain row and column number. This web
-also validates for user inputs as soon as the user enters an input. If the input
-is invalid, the user will automatically get notified by the JQuery validation
-plugin.
+	Description: This web page prompts the user for a specific number of rows and
+	columns and displays a multiplication table starting at the specified row
+	and column number and ending at a certain row and column number. This web
+	also validates for user inputs as soon as the user enters an input. If the input
+	is invalid, the user will automatically get notified by the JQuery validation
+	plugin.
 */
 //Programming the button to execute the Javascript funtion
 document.getElementById("button").addEventListener("click", function(event){
@@ -39,25 +40,19 @@ function printTable(){
 
     //Display an error message if the input for the start of the row is not a number
     if(isNaN(startRow)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(startRow == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error message if the input for the start of the row is out of bounds
-    else if(startRow < 1 || startRow > 350)
+    else if(startRow < -150 || startRow > 150)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message3").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -70,25 +65,19 @@ function printTable(){
 
     //Display an error message if the input for the end of the row is not a number
     if(isNaN(endRow)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(endRow == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error message if the input for the end of the row is out of bounds
-    else if(endRow < 1 || endRow > 350)
+    else if(endRow < -150 || endRow > 150)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message4").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -101,25 +90,19 @@ function printTable(){
 
     //Display an error message if the input for the start of the column is not a number
     if(isNaN(startColumn)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(startColumn == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error message if the input for the start of the column is out of bounds
-    else if(startColumn < 1 || startColumn > 350)
+    else if(startColumn < -150 || startColumn > 150)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message1").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
@@ -132,25 +115,19 @@ function printTable(){
 
     //Display an error message if the input for the end of the column is not a number
     if(isNaN(endColumn)){
-        validation = "This entry is invalid! Numbers only!";
-        document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error if the input is empty
     else if(endColumn == ""){
-        validation = "This entry is empty! Non-zero entry only!";
-        document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
 
     //Display an error message if the input for the end of the column is out of bounds
-    else if(endColumn < 1 || endColumn > 350)
+    else if(endColumn < -150 || endColumn > 150)
     {
-        validation = "The limit is from 1 to 350!";
-        document.getElementById("message2").innerHTML = validation;
         //Assign the error checker to 1 (true)
         error = 1;
     }
