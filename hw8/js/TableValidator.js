@@ -81,28 +81,28 @@ function validate()
       messages:{
           //Displaying an error message for the start of the column with requirements and digit validation
           beginColumn:{
-            required: "Please enter a number from -25 to 25 except 0",
+            required: "Please enter a number from -25 to 25",
             number: "Only numbers are allowed!",
             min: "The minimum is -25!",
             max: "The maximum is 25!"
           },
           //Displaying an error message for the end of the column with requirements and digit validation
           endColumn:{
-            required: "Please enter a number from -25 to 25 except 0",
+            required: "Please enter a number from -25 to 25",
             number: "Only numbers are allowed!",
             min: "The minimum is -25!",
             max: "The maximum is 25!"
           },
           //Displaying an error message for the start of the row with requirements and digit validation
           beginRow:{
-            required: "Please enter a number from -25 to 25 except 0",
+            required: "Please enter a number from -25 to 25",
             number: "Only numbers are allowed!",
             min: "The minimum is -25!",
             max: "The maximum is 25!"
           },
           //Displaying an error message for the end of the row with requirements and digit validation
           endRow:{
-            required: "Please enter a number from -25 to 25 except 0",
+            required: "Please enter a number from -25 to 25",
             number: "Only numbers are allowed!",
             min: "The minimum is -25!",
             max: "The maximum is 25!"
