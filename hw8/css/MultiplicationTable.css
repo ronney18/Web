@@ -1,21 +1,23 @@
 /*
-File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
-COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
+File: http://ronney18.github.io/Web/hw8/MultiplicationTable.html
+COMP4610 Assignment 8: Creating a Multiplication Table Using the JQuery UI Slider
+and Tab Widgets
 Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
 Copyright (c) 2018 by Ronney Sanchez.
-updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+updated by Ronney Sanchez on December 4, 2018 at 9:30 PM
 
 Sources: https://www.w3schools.com/js/default.asp
-				https://jqueryvalidation.org/
-				Albara Mehene (class mate)
-				Marittya Keu (class mate)
+         https://jqueryvalidation.org/
+          Albara Mehene (class mate)
+          Marittya Keu (class mate)
 
 Description: This web page prompts the user for a specific number of rows and
 columns and displays a multiplication table starting at the specified row
 and column number and ending at a certain row and column number. This web
 also validates for user inputs as soon as the user enters an input. If the input
 is invalid, the user will automatically get notified by the JQuery validation
-plugin.
+plugin. This web can also save multiplication tables in tabs for up to 10
+tables total.
 */
 header, footer{
 	/*Displaying blocks for the footer and header*/
@@ -79,6 +81,7 @@ div header{
 	    -webkit-appearance: none;
 			/*Using 50% of the form's width*/
 	    width: 50%;
+			/*Setting the height to 15 pixels*/
 	    height: 15px;
 	    border-radius: 5px;
 	    background: #d3d3d3;
@@ -92,6 +95,7 @@ div header{
     opacity: 1;
 }
 
+/*Styling each sliders with bootstrap arguments in the html page*/
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -100,12 +104,16 @@ div header{
     background: #4CAF50;
     cursor: pointer;
 }
-
+/*Styling each sliders with bootstrap arguments in the html page*/
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #4CAF50;
     cursor: pointer;
+}
+/*Setting the backgroung color of the tab page to yellow*/
+#tabs{
+		background-color: yellow;
 }
 
 	h1{
