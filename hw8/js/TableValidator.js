@@ -1,9 +1,10 @@
 /*
-File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
-COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
+File: http://ronney18.github.io/Web/hw8/MultiplicationTable.html
+COMP4610 Assignment 8: Creating a Multiplication Table Using the JQuery UI Slider
+and Tab Widgets
 Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
 Copyright (c) 2018 by Ronney Sanchez.
-updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+updated by Ronney Sanchez on December 4, 2018 at 9:30 PM
 
 Sources: https://www.w3schools.com/js/default.asp
          https://jqueryvalidation.org/
@@ -15,7 +16,8 @@ columns and displays a multiplication table starting at the specified row
 and column number and ending at a certain row and column number. This web
 also validates for user inputs as soon as the user enters an input. If the input
 is invalid, the user will automatically get notified by the JQuery validation
-plugin.
+plugin. This web can also save multiplication tables in tabs for up to 10
+tables total.
 */
 //Programming the button to execute the Javascript funtion
 document.getElementById("button").addEventListener("click", function(event){
@@ -115,7 +117,7 @@ function validate()
           //Return false to the user
           return false;
       },
-
+      //Hide the table if there is an invalid submission on the form
       invalidHandler: function(){
           $("#div1").empty();
       }
@@ -123,7 +125,9 @@ function validate()
 }
 
 //Albara Mehene helped me with this function in order to create a slider
+//Creating a slider
 function slider(){
+    //Setting the slider with a minimum value of -25 and a maximum of 25
     $("#slider_startRow").slider({
         min: -25,
         max: 25,
@@ -136,7 +140,7 @@ function slider(){
         $("slider_startRow").slider("value", this.value);
         valid();
     })
-
+    //Setting the slider with a minimum value of -25 and a maximum of 25
     $("#slider_endRow").slider({
         min: -25,
         max: 25,
@@ -149,7 +153,7 @@ function slider(){
         $("slider_endRow").slider("value", this.value);
         valid();
     })
-
+    //Setting the slider with a minimum value of -25 and a maximum of 25
     $("#slider_startColumn").slider({
         min: -25,
         max: 25,
@@ -162,7 +166,7 @@ function slider(){
         $("slider_startColumn").slider("value", this.value);
         valid();
     })
-
+    //Setting the slider with a minimum value of -25 and a maximum of 25
     $("#slider_endColumn").slider({
         min: -25,
         max: 25,
@@ -177,35 +181,38 @@ function slider(){
     })
 
 }
-
+//Initialize the number of tables to 1
 var numTables = 1;
 
 //Albara Mehene helped me with this function in order to create a tab to save 10 tables
 function tabs(){
+    //Getting the values of the rows and columns from the html page
     var StartRow = Number(document.getElementById("beginRow").value);
     var EndRow = Number(document.getElementById("endRow").value);
     var StartColumn = Number(document.getElementById("beginColumn").value);
     var EndColumn = Number(document.getElementById("endColumn").value);
-
+    //Initialize the counter to the number of tabs in the list item
     var count = $("#tabs li").length + 1;
-
+    //Return false if the counter is greater than 10
     if(count > 10)
     {
         return false;
     }
-
+    //Recall the tab function for each tabs in the tab page
     $("#tabs").tabs();
 
     numTables++;
-
+    //Adding the title of the table to a variable
     var title = "<li class='tab'><a href='#tab-" + numTables + "'>" + "["+ StartRow +
     "," + EndRow + "," + StartColumn + "," + EndColumn + "]" + "</a>" +
     "<span class='ui-icon ui-icon-close' role='presentation'></span>" + "</li>";
+    //Append the title to the unorder list
     $( "div#tabs ul" ).append( title );
-
+    //Append the number of tables to each tabs
     $( "div#tabs" ).append('<div id=tab-' + numTables + '>'+'<table class="table table-bordered table-hover"' + $("#div1").html() +'</table>'+ '</div>');
-
+    //Append the table
     $( "div#tabs" ).append(makeTable());
+    //Refresh each tabs
     $( "#tabs" ).tabs("refresh");
 
     $( "#tabs" ).tabs("option", "active", -1);
@@ -214,11 +221,11 @@ function tabs(){
         var number_list = $( this ).closest( "li" ).remove().attr( "aria-controls" );
         $( "#" + number_list).remove();
     });
-
 }
 
-function makeTable(){
-
+function makeTable()
+{
+  //Getting the values of the rows and columns from the html page
   var StartColumn = Number(document.getElementById('beginColumn').value);
   var EndColumn = Number(document.getElementById('endColumn').value);
   var StartRow = Number(document.getElementById('beginRow').value);
