@@ -17,7 +17,6 @@ also validates for user inputs as soon as the user enters an input. If the input
 is invalid, the user will automatically get notified by the JQuery validation
 plugin.
 */
-
 //Validating the form from the html page
 $(document).ready(function(){
     $("#myForm").validate({
@@ -82,6 +81,6 @@ $(document).ready(function(){
               min: "The minimum is -150!",
               max: "The maximum is 150!"
             }
-        },
+        }
     });
 });
