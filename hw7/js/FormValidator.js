@@ -18,11 +18,6 @@ is invalid, the user will automatically get notified by the JQuery validation
 plugin.
 */
 
-//Programming the button to execute the Javascript funtion
-document.getElementById("button").addEventListener("click", function(event){
-    event.preventDefault();
-},false);
-
 //The document will run these function whenever is ready
 $(document).ready(function() {
     validate();
