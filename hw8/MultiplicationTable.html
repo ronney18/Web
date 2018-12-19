@@ -1,21 +1,23 @@
 <!--
-	File: http://ronney18.github.io/Web/hw7/MultiplicationTable.html
-	COMP4610 Assignment 7: Creating a Multiplication Table with JQuery Validation Plugin
-	Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
-	Copyright (c) 2018 by Ronney Sanchez.
-	updated by Ronney Sanchez on November 24, 2018 at 11:30 PM
+File: http://ronney18.github.io/Web/hw8/MultiplicationTable.html
+COMP4610 Assignment 8: Creating a Multiplication Table Using the JQuery UI Slider
+and Tab Widgets
+Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+Copyright (c) 2018 by Ronney Sanchez.
+updated by Ronney Sanchez on December 4, 2018 at 9:30 PM
 
-	Sources: https://www.w3schools.com/js/default.asp
-					 https://jqueryvalidation.org/
-						Albara Mehene (class mate)
-						Marittya Keu (class mate)
+Sources: https://www.w3schools.com/js/default.asp
+				 https://jqueryvalidation.org/
+					Albara Mehene (class mate)
+					Marittya Keu (class mate)
 
-	Description: This web page prompts the user for a specific number of rows and
-	columns and displays a multiplication table starting at the specified row
-	and column number and ending at a certain row and column number. This web
-	also validates for user inputs as soon as the user enters an input. If the input
-	is invalid, the user will automatically get notified by the JQuery validation
-	plugin.
+Description: This web page prompts the user for a specific number of rows and
+columns and displays a multiplication table starting at the specified row
+and column number and ending at a certain row and column number. This web
+also validates for user inputs as soon as the user enters an input. If the input
+is invalid, the user will automatically get notified by the JQuery validation
+plugin. This web can also save multiplication tables in tabs for up to 10
+tables total.
 -->
 <!DOCTYPE html>
 <html lang="en-us">
@@ -63,6 +65,7 @@
 					<div>
           	<input type="number" class="form-control" name="beginColumn" id="beginColumn" placeholder="Starting Row">
 					</div>
+					<!--Slider Divider-->
 					<div class="slider" id="slider_startColumn">
 					</div>
 					<p id="message1"></p>
@@ -75,6 +78,7 @@
 					<div>
           	<input type="number" class="form-control" name="endColumn" id="endColumn" placeholder="Ending Row">
 					</div>
+					<!--Slider Divider-->
 					<div class="slider" id="slider_endColumn">
 					</div>
 					<p id="message2"></p>
@@ -88,6 +92,7 @@
 					<div>
           	<input type="number" class="form-control" name="beginRow" id="beginRow" placeholder="Starting Column">
 					</div>
+					<!--Slider Divider-->
 					<div class="slider" id="slider_startRow">
 					</div>
 					<p id="message3"></p>
@@ -100,6 +105,7 @@
 					<div>
           	<input type="number" class="form-control" name="endRow" id="endRow" placeholder="Ending Column">
 					</div>
+					<!--Slider Divider-->
 					<div class="slider" id="slider_endRow">
 					</div>
 					<p id="message4"></p>
@@ -108,7 +114,7 @@
         </div>
 				<label>
 						<!-- button input-->
-						<input type="submit" id="button" value="Submit" onclick="tabs()">
+						<input type="submit" id="button" value="Save" onclick="tabs()">
 				</label>
         </form>
 		</div>
@@ -130,8 +136,6 @@
 	</footer>
 	</div>
 	<!--J Query Validation Plugin Source code javascript-->
-	<!--<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
