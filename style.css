@@ -62,8 +62,10 @@ a:visited {
 	color: white;
 }
 img{
+	width: 30%;
+  	height: auto;
 	/*Pad all the images to 20 pixels*/
-  padding: 20px;
+  	padding: 20px;
 }
 
 #content{
