@@ -1,0 +1,85 @@
+/*
+File: http://ronney18.github.io/Web/hw9/Scrabble.html
+COMP4610 Assignment 9: Implementing a Bit of Scrabble with Drag and Drop
+Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+Copyright (c) 2018 by Ronney Sanchez.
+updated by Ronney Sanchez on December 18, 2018 at 6:30 PM
+
+Sources: https://www.w3schools.com/js/default.asp
+					Albara Mehene (class mate)
+					Marittya Keu (class mate)
+
+Description: This web page plays a bit of the game of Scrabble using drag-and-drop.
+The idea is to display one line of the Scrabble board (one line sample) to the user
+along with seven letter tiles on a tile rack. The user then drags tiles to the board
+to make a word, I am to report his or her score, taking the letter values and bonus
+squares into consideration.
+*/
+
+header, footer{
+	/*Displaying blocks for the footer and header*/
+	display: block;
+}
+
+html{
+	/*Having the backgroung color to be Purple*/
+	background-color: Purple;
+}
+
+body{
+	/*Using the solarsystem image as the body background*/
+	background-image: url(ScrabbleTiles.jpg);
+	/*No margin on the body page*/
+	margin: 10px;
+	/*Aligning all the text to the center of the body page*/
+  text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	/*Pad the body to 20 pixels*/
+	padding: 20px;
+}
+
+#wrapper {
+	/*The minimum width will be down to 800 pixels*/
+	min-width: 700px;
+	background: lightblue;
+	/*Moving the left margin to 150 pixels from the left side of the html page*/
+	margin: 30px;
+	/*Using the font color of white*/
+  color: red;
+	/*Padding the wrapper to 30 pixels*/
+  padding: 30px;
+}
+
+.line{
+	/*Resizing the width to 55 pixels*/
+	width: 55px;
+	/*Resizing the heith to same length as the width*/
+	height: auto;
+}
+
+div header{
+			/*Using an image as the backgroung header*/
+			background-image: url(header.png);
+			/*There will be no repeats to the backgroung image*/
+			background-repeat: no-repeat;
+			/*Position the backgroung image to the right of the header*/
+			background-position: right;
+			/*Using dark green as the color of the backgroung header*/
+      background-color: tan;
+			/*Padding the header using 20 pixels*/
+			padding: 20px;
+	}
+
+  /*Changing link color to yellow*/
+  a{
+  	color: green;
+  }
+
+  /*Changing link color to violet when hovered over*/
+  a:hover{
+    color: yellow;
+  }
+  /*Changing link color to white when visited*/
+  a:visited {
+  	color: orange;
+  }

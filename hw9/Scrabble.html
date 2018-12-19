@@ -1,0 +1,82 @@
+<!--
+File: http://ronney18.github.io/Web/hw9/Scrabble.html
+COMP4610 Assignment 9: Implementing a Bit of Scrabble with Drag and Drop
+Ronney Sanchez, UMass Lowell Computer Science, Ronney_Sanchez@student.uml.edu
+Copyright (c) 2018 by Ronney Sanchez.
+updated by Ronney Sanchez on December 18, 2018 at 6:30 PM
+
+Sources: https://www.w3schools.com/js/default.asp
+					Albara Mehene (class mate)
+					Marittya Keu (class mate)
+
+Description: This web page plays a bit of the game of Scrabble using drag-and-drop.
+The idea is to display one line of the Scrabble board (one line sample) to the user
+along with seven letter tiles on a tile rack. The user then drags tiles to the board
+to make a word, I am to report his or her score, taking the letter values and bonus
+squares into consideration.
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+      <!-- CSS Link -->
+    	<link href="css/Scrabble.css" rel="stylesheet">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--page title-->
+	<title>
+		Ronney's Scrabble Game
+	</title>
+	<!--J Query Validation Plugin Source code javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src ="js/Scrabble.js"></script>
+</head>
+    <body>
+				<!-- Page Wrapper -->
+        <div id="wrapper" style="text-align: center">
+					<!--page header-->
+					<header>
+							<h1>
+									MY Own Scrabble Game
+							</h1>
+					</header>
+					<!--Row Display-->
+            <table>
+							<!--Table rows-->
+                <tr>
+                    <td><img id="1" class="line" title="blank" src="img/Tile_Blank_Board.JPG" ></td>
+                    <td><img id="2" class="line" title="blank" src="img/Tile_Blank_Board.JPG"></td>
+                    <td><img id="3" class="line" title="doubleWord" src="img/Tile_DoubleWordScore.JPG"></td>
+                    <td><img id="4" class="line" title="blank" src="img/Tile_Blank_Board.JPG"></td>
+                    <td><img id="5" class="line" title="tripleLetter" src="img/Tile_TripleLetterScore.JPG"></td>
+                    <td><img id="6" class="line" title="blank" src="img/Tile_Blank_Board.JPG"></td>
+                    <td><img id="7" class="line" title="blank" src="img/Tile_Blank_Board.JPG"></td>
+                    <td><img id="8" class="line" title="doubleLetter" src="img/Tile_DoubleLetterScore.JPG"></td>
+                </tr>
+            </table>
+					<!--Rack Divider-->
+        <div id="myRack" style="text-align: center">
+					<!--Rack image-->
+            <img id="rack" src="img/TileRack.JPG">
+            <div id="theRack" style="text-align: center"></div>
+        </div>
+
+        <div>
+						<!--Game button divider-->
+            <div id="gameButton" style="text-align: center">
+                <button onclick="constructRack()" id="genNewTile">Construct New Tiles</button>
+								<!--Score Display-->
+                <h3>Score:<span id="myScore">0</span></h3>
+            </div>
+        </div>
+				<div id="creditor">
+				<!-- Page Footer -->
+				<footer>
+						Copyright &copy; Ronney Sanchez
+						<br>
+						<a href="mailto:sanchezronney@gmail.com">Email: sanchezronney@gmail.com</a>
+				</footer>
+			</div>
+		</div>
+</body>
+</html>
