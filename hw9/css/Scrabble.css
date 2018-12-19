@@ -52,7 +52,7 @@ body{
 
 .line{
 	/*Resizing the width to 55 pixels*/
-	width: 65px;
+	width: 60px;
 	/*Resizing the heith to same length as the width*/
 	height: auto;
 }
