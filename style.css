@@ -35,7 +35,7 @@ html{
 
 body{
 	/*Using the solarsystem image as the body background*/
-	background-image: url(solarsystem.png);
+	background-image: url(img/solarsystem.png);
 	/*No margin on the body page*/
 	margin: 10px;
 	/*Aligning all the text to the center of the body page*/
@@ -96,7 +96,7 @@ p{
 
 #content ul{
 	/*Using an image bullet for the list in the content page*/
-	list-style-image: url(marker.gif);
+	list-style-image: url(img/marker.gif);
 	/*Position the bullets to the inside of the content page*/
 	list-style-position: inside;
 }
@@ -117,7 +117,7 @@ p{
 
 div header{
 			/*Using an image as the backgroung header*/
-			background-image: url(header.JPG);
+			background-image: url(img/header.JPG);
 			/*There will be no repeats to the backgroung image*/
 			background-repeat: no-repeat;
 			/*Position the backgroung image to the right of the header*/
