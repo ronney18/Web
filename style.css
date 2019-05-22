@@ -117,7 +117,7 @@ p{
 
 div header{
 			/*Using an image as the backgroung header*/
-			background-image: url(img/header.JPG);
+			background-image: url(img/header.jpg);
 			/*There will be no repeats to the backgroung image*/
 			background-repeat: no-repeat;
 			/*Position the backgroung image to the right of the header*/
