@@ -39,7 +39,7 @@ body{
 	/*No margin on the body page*/
 	margin: 10px;
 	/*Aligning all the text to the center of the body page*/
-  text-align: center;
+	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	/*Pad the body to 20 pixels*/
 	padding: 20px;
@@ -107,8 +107,8 @@ p{
 	/*The minimum width will be down to 800 pixels*/
 	min-width: 800px;
 	background: #00569f;
-	/*Moving the left margin to 150 pixels from the left side of the html page*/
-	margin-left: 150px;
+	/*Moving the left margin to 125 pixels from the left side of the html page*/
+	margin-left: 125px;
 	/*Using the font color of white*/
   color: white;
 	/*Padding the wrapper to 30 pixels*/
