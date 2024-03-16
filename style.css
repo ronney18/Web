@@ -58,6 +58,9 @@ a:visited {
 	color: white;
 }
 
+.anc {
+	padding: 15px;
+}
 .anc:hover {
 	color: white;
 }
