@@ -48,6 +48,7 @@ body{
 /*Changing link color to yellow*/
 a{
 	color: yellow;
+	padding: 10px;
 }
 
 a:hover{
