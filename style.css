@@ -60,11 +60,11 @@ a:visited {
 }
 
 .anc {
-	padding: 10px;
+	padding: 5px;
 }
 
 .anc:hover {
-	color: white;
+	color: violet;
 }
 img{
 	width: 30%;
