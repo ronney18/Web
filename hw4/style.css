@@ -48,7 +48,7 @@ body{
 /*Changing link color to yellow*/
 a{
 	color: yellow;
-	padding: 5px;
+	padding: 10px;
 }
 
 a:hover{
@@ -60,11 +60,11 @@ a:visited {
 }
 
 .anc {
-	padding: 10px;
+	padding: 5px;
 }
 
 .anc:hover {
-	color: white;
+	color: violet;
 }
 img{
 	width: 30%;
